@@ -10,7 +10,7 @@ added player help menu /decp
 
 Added admin help menu /decp help
 
-Added Clickable commands into both help menu
+Added Clickable commands into both help menus
 
 # Initial release 1.0
 View [wiki](https://github.com/doragoncraft/DcEasyCmdsPrem/wiki)
