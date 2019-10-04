@@ -21,3 +21,5 @@ View [wiki](https://github.com/doragoncraft/DcEasyCmdsPrem/wiki)
 - [x] Create github page and wiki
 - [ ] Get more ideas
 - [ ] Fix issues if any
+
+View my other resources [Here:](https://www.spigotmc.org/resources/authors/doragoncraft.126499/)
