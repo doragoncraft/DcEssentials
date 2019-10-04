@@ -1,7 +1,7 @@
 # Placeholder
 [%player%] - Player name
 
-# Commands and its permmisons 
+# Commands and its perms
 /ctc - clears full server chat 
   # - decp.ctc.clear
 /ctc lines - shows how many lines of text it will clear 
