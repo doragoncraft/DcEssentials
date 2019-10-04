@@ -12,6 +12,9 @@ Added admin help menu /decp help
 
 Added Clickable commands into both help menu
 
+# Initial release 1.0
+View [wiki](https://github.com/doragoncraft/DcEasyCmdsPrem/wiki)
+
 - [x] upload to spigot 
 - [ ] Create github page and wiki
 - [ ] Get more ideas
