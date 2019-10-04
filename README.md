@@ -18,6 +18,6 @@
 View [wiki](https://github.com/doragoncraft/DcEasyCmdsPrem/wiki)
 
 - [x] upload to spigot 
-- [ ] Create github page and wiki
+- [x] Create github page and wiki
 - [ ] Get more ideas
-- [ ] Fix issuses if any
+- [ ] Fix issues if any
