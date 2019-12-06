@@ -44,7 +44,8 @@ Key < > Needed [ ] optinal
   
   
   For Permmisons see: https://github.com/doragoncraft/DcEasyCmdsPrem/wiki/Commands-and-Perms
-  Default lang file for if you mess it up: https://github.com/doragoncraft/DcEasyCmdsPrem
+  
+  Default lang file and config for if you mess it up: https://github.com/doragoncraft/DcEasyCmdsPrem
 
 
 # Update 1.1
