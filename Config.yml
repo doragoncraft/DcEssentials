@@ -8,13 +8,13 @@ fadein: 30
 stay: 100
 fadeout: 100
 
-#clear chat config
+#Clear chat config
 Prefix: '&6[&1D&fC&6]&c'
 CMessage: '&r'
 Message: '&7has cleaned the chat!'
 Lines: 150
 
-##### PlaceHolders && Permissions && Icons && Commands ######
+  ##### PlaceHolders && Permissions && Icons && Commands ######
 
   #[%player%] - Player name
   #/ctc - clears full server chat - decp.ctc.clear
@@ -32,7 +32,6 @@ Lines: 150
   #/links - put extra links here - no perms
   #/setgui - gui setup menu - decp.gui
   #/youtube - youtube link - no perm
-
 
 #Icons:
 #{icon1} - ❤
@@ -52,6 +51,32 @@ Command Block:
     - "/minecraft"
     - "/op"
   Message: "&cYou can not use that command!"
+
+#MAINTENANCE
+Maintenance:
+  NormalMOTD:
+    - '&1Doragon&bCraft                               &4&lWE ARE BACK!'
+    - '&2Doragon&aCraft                               &4&lWE ARE BACK!'
+    - '&5Doragon&dCraft                               &4&lWE ARE BACK!'
+    - '&8Doragon&7Craft                               &4&lWE ARE BACK!'
+    - '&4Doragon&cCraft                               &4&lWE ARE BACK!'
+    - '&1Doragon&fCraft                               &4&lWE ARE BACK!'
+    - '&6Doragon&eCraft                               &4&lWE ARE BACK!'
+  MaintenanceMOTD:
+    - '&1Doragon&fCraft: &4In Maintenance Mode &1Try Again Soon!'
+  KickMessage: '&4Server Is Under Maintenance &4&lWill Be Back Soon!'
+  BroadcastTime:
+    - 10
+    - 30
+    - 60
+  BroadcastSecondsMessage: '&4DCMaintenance Mode In 10 Seconds!'
+  BroadcastSecondMessage: '&4DCMaintenance Mode In 30 Second!'
+  BroadcastMinuteMessage: '&4DCMaintenance Mode In 1 Minute!'
+  BroadcastOnMaintenanceEnableMessage: '&4Server Is Now In Maintenance Mode'
+  BroadcastOnMaintenanceDisableMessage: '&bServer Is No Longer In Maintenance Mode'
+  CheckForUpdates: false
+  enabled: true
+
 #Discord Section
 Discord:
   Enabled: true
