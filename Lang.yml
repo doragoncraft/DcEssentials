@@ -1,0 +1,86 @@
+#LANGUAGE File
+##### PlaceHolders  ######
+
+# [%player%] - Player name
+# [%TARGET%] - Target player name
+NO_PERM: '&4You don''t have permission to do that!'
+Console: '&cYou cannot use this command from the console!'
+Wrong_Args: '&4You are missing Args! please try again!'
+Config_Reloaded: 'Config &aSuccessfully reloaded.'
+Block_Cmd_Message:  '&cYou can not use that command!'
+
+#HOMES
+No_Homes: 'You dont have any homes!'
+Home_Name:  'You must specify a home name!'
+Home_Deleted: ' has been successfully deleted!'
+Unknown_Home: 'Unknown home name!'
+
+#SPAWN#
+Spawn_Not_Set: '&cSpawn is not set! Please notify a Administrator to set the spawn!'
+set_spawn_msg: '&aSucessfully set spawn!'
+Spawn_Welcome_Msg:  '&aWelcome to the server''s spawn!'
+
+#TPA#
+TPA_RequestReceived_1:  '&aTeleport request from &6/user/ &areceived.'
+TPA_RequestReceived_2:  '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/ &ato deny.'
+TPA_RequestReceived_3:  '&6/user/ &ahas requested you to teleport to them.'
+TPA_RequestReceived_4:  '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/ &ato deny.'
+TPA_TpaRequestAccepted:  ' &6/user/ &ahas been teleported to you!'
+TPA_RequestAccepted:  '&6/target/ &aaccepted the teleport!'
+TPA_RequestSent:  '&aTeleport request successfully sent to &6/target/'
+TPA_TphereRequestAccepted:  '&aYou have been teleported to &6/user/!'
+TPA_RequestDeniedTeleport:  '&6/target/ &7has denied the teleport '
+TPA_RequestDenied:  '&7You denied the teleport'
+TPA_NoRequestToDeny:  '&7No request to deny!'
+TPA_NoRequestToAccept:  '&7No request to accept!'
+TPA_PlayerInAnotherWorldError: '&7You can''t teleport to a player in another world!'
+TPA_NoPlayerSpecified: '&7Please specify a player!'
+TPA_PlayerDoesNotExistError: ''
+Existing_Tpa_Request:  'You have already requested a tpa from that player!'
+Existing_Tphere_Request:  'You have already requested a tphere from that player!'
+
+#Vanish#
+Vanished:  'You are now Vanished.'
+Un_Vanished:  '&9You are no longer Vanished.'
+
+#Fly#
+Fly_Enabled: 'Flying Enabled.'
+Fly_Disabled:  'Flying Disabled.'
+
+#Speed#
+Not_Enough_Arguments: 'Error. Use /speed <0-9> if flying. If walking use /speed <0-8>.'
+Changed_Speed_Level: 'Set your Speed Level to [SPEED]&9.'
+Too_High_Fly_Speed_Level: 'Fly speed &cError. Use 0-9!'
+Too_High_Walk_Speed_Level:  'Walk speed &cError. Use 0-8!'
+
+#Gamemode#
+Too_High_Number:  '&cError. Use /gm <0-3> [Player].'
+Not_Online:  '&cError. This Player isn''t Online.'
+#SELF#
+Set_To_Creative:  'Your Gamemode has been set to &1Creative&9.'
+Set_To_Survival:  'Your Gamemode has been set to &1Survival&9.'
+Set_To_Adventure:  'Your Gamemode has been set to &1Adventure&9.'
+Set_To_Spectator:  'Your Gamemode has been set to &1Spectator&9.'
+#OTHER#
+Set_Other_Creative: 'You set &1[%TARGET%]''s &9Gamemode to &1Creative&9.'
+Set_Other_Survival:  'You set &1[%TARGET%]''s &9Gamemode to &1Survival&9.'
+Set_Other_Adventure:  'You set &1[%TARGET%]''s &9Gamemode to &1Adventure&9.'
+Set_Other_Spectator:  'You set &1[%TARGET%]''s &9Gamemode to &1Spectator&9.'
+
+#HEALTH#
+FeedMsg:  'you have been fed'
+FeedMsgOther:  'You have been fed by'
+HealMsg:  'you have been healed'
+HealMsgOther:  'You have been healed by'
+
+#Weather#
+SunMsg:  'sunny'
+RainMsg:  'Storm'
+
+#Time#
+Time_Day:  'Set Day Time!'
+Time_Noon:  'Set Day Time!'
+Time_Sunset:  'Set Day Time!'
+Time_Night:  'Set Night Time'
+Time_Midnight:  'Set Day Time!'
+Time_Sunrise:  'Set Day Time!'
