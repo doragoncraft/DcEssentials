@@ -7,13 +7,21 @@ NO_PERM: '&4You don''t have permission to do that!'
 Console: '&cYou cannot use this command from the console!'
 Wrong_Args: '&4You are missing Args! please try again!'
 Config_Reloaded: 'Config &aSuccessfully reloaded.'
-Block_Cmd_Message:  '&cYou can not use that command!'
+Block_Cmd_Message: '&cYou can not use that command!'
+Unkown_Command: '&cUnkown Command'
+IncorrectUsage: 'Incorrect Usage'
+AntiOP: 'This command can only be used by the console.
+          For security reasons'
+Admin: 'Please ask one of the admins to enable this option!'
+Broadcast: '"&2[&6Broadcaste&2] '
 
 #HOMES
+Solid_Block: 'You must be on the a solid Block!'
 No_Homes: 'You dont have any homes!'
 Home_Name:  'You must specify a home name!'
 Home_Deleted: ' has been successfully deleted!'
 Unknown_Home: 'Unknown home name!'
+Too_many_homes: 'You have too many homes! Try deleting some of them.'
 
 #SPAWN#
 Spawn_Not_Set: '&cSpawn is not set! Please notify a Administrator to set the spawn!'
@@ -35,9 +43,13 @@ TPA_NoRequestToDeny:  '&7No request to deny!'
 TPA_NoRequestToAccept:  '&7No request to accept!'
 TPA_PlayerInAnotherWorldError: '&7You can''t teleport to a player in another world!'
 TPA_NoPlayerSpecified: '&7Please specify a player!'
-TPA_PlayerDoesNotExistError: ''
+TPA_PlayerDoesNotExistError: '&7That player doesn''t exist! or is Not online!'
 Existing_Tpa_Request:  'You have already requested a tpa from that player!'
 Existing_Tphere_Request:  'You have already requested a tphere from that player!'
+
+#Repair#
+repaireditemhand: 'Successfully repaired item in hand'
+repairallitems: 'Successfully repaired all repairable item'
 
 #Vanish#
 Vanished:  'You are now Vanished.'
@@ -70,8 +82,10 @@ Set_Other_Spectator:  'You set &1[%TARGET%]''s &9Gamemode to &1Spectator&9.'
 #HEALTH#
 FeedMsg:  'you have been fed'
 FeedMsgOther:  'You have been fed by'
+FeedOtherSender: 'you have fed'
 HealMsg:  'you have been healed'
 HealMsgOther:  'You have been healed by'
+HealOtherSender: 'You have healed'
 
 #Weather#
 SunMsg:  'sunny'
