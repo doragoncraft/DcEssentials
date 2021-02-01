@@ -1,6 +1,7 @@
-#Now you can display titles to players!
-#Simply change the times that fit you.
-#Remebmer! - 20 tickes = 1 second. (The numbers are ticks).
+
+Thank-you-message: true #This is the "Thank you for using DCEasyCmds Prem message" (Only server Opped players see this!)
+#Message for /info
+info-message: '&3Already <players> players have connected to the server, server has run for <time> and world has <size> so far.'
 
 ###### Title Settings ######
 #This settings are for every title.
@@ -40,7 +41,11 @@ Lines: 150
 #{icon4} - ＼(｀0´)／
 #{icon5} - ヽ(^o^)ノ
 #################
-Thank-you-message: true #This is the "Thank you for using DCEasyCmds Prem message" (Only server Opped players see this!)
+
+#Antiop this if enabled means you can only op players from the console
+AntiOP:
+  Enabled: true
+#this will block commands from being used
 Command Block:
   Enabled: true
   Commands:
@@ -51,32 +56,26 @@ Command Block:
     - "/minecraft"
     - "/op"
   Message: "&cYou can not use that command!"
-
-#MAINTENANCE
-Maintenance:
-  NormalMOTD:
-    - '&1Doragon&bCraft                               &4&lWE ARE BACK!'
-    - '&2Doragon&aCraft                               &4&lWE ARE BACK!'
-    - '&5Doragon&dCraft                               &4&lWE ARE BACK!'
-    - '&8Doragon&7Craft                               &4&lWE ARE BACK!'
-    - '&4Doragon&cCraft                               &4&lWE ARE BACK!'
-    - '&1Doragon&fCraft                               &4&lWE ARE BACK!'
-    - '&6Doragon&eCraft                               &4&lWE ARE BACK!'
-  MaintenanceMOTD:
-    - '&1Doragon&fCraft: &4In Maintenance Mode &1Try Again Soon!'
-  KickMessage: '&4Server Is Under Maintenance &4&lWill Be Back Soon!'
-  BroadcastTime:
-    - 10
-    - 30
-    - 60
-  BroadcastSecondsMessage: '&4DCMaintenance Mode In 10 Seconds!'
-  BroadcastSecondMessage: '&4DCMaintenance Mode In 30 Second!'
-  BroadcastMinuteMessage: '&4DCMaintenance Mode In 1 Minute!'
-  BroadcastOnMaintenanceEnableMessage: '&4Server Is Now In Maintenance Mode'
-  BroadcastOnMaintenanceDisableMessage: '&bServer Is No Longer In Maintenance Mode'
-  CheckForUpdates: false
+#Motd
+MOTD:
+  MOTDS:
+    - '&1Doragon&bCraft &cUsing DECP'
+    - '&2Doragon&aCraft &dUsing DECP'
+    - '&5Doragon&dCraft &cUsing DECP'
+    - '&8Doragon&7Craft &aUsing DECP'
+    - '&4Doragon&cCraft &2Using DECP'
+    - '&1Doragon&fCraft &6Using DECP'
+    - '&6Doragon&eCraft &eUsing DECP'
+  WhiteListMOTD:
+    - "&cServer is whitelisted...\n&aCome back later!"
+    - "&cWe are doing stuff...\n&aSorry! Come back later!"
   enabled: true
-
+#Spawn settings
+Spawn:
+  world: world
+  x: 0.00000000
+  y: 70.0
+  z: 0.00000000
 #Discord Section
 Discord:
   Enabled: true
@@ -296,4 +295,4 @@ gui:
           - "&7Click Here to exit"
       message-send:
         - "You are no longer in edit mode!"
-##################### 
+#####################
