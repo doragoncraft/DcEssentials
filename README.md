@@ -42,9 +42,6 @@ Key < > Needed [ ] optinal
   
   ALL new lang file for these commands
   
-  
-  For Permmisons see: https://github.com/doragoncraft/DcEasyCmdsPrem/wiki/Commands-and-Perms
-  
   Default lang file and config for if you mess it up: https://github.com/doragoncraft/DcEasyCmdsPrem
 
 
