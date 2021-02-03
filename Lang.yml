@@ -93,8 +93,4 @@ RainMsg:  'Storm'
 
 #Time#
 Time_Day:  'Set Day Time!'
-Time_Noon:  'Set Day Time!'
-Time_Sunset:  'Set Day Time!'
 Time_Night:  'Set Night Time'
-Time_Midnight:  'Set Day Time!'
-Time_Sunrise:  'Set Day Time! '
