@@ -82,8 +82,11 @@
     description: sets weather to storm
     aliases: [storm, thunder]
 
-  time:
-    description: set time off day
+  day:
+    description: set day time
+  
+  night:
+    description: set night time
 
   tpa:
     description: Send a tpa request
@@ -129,9 +132,13 @@
   repair:
     description: repair your tools and armor
 
-  Broadcast:
+  broadcast:
     description: Broadcast a message to the whole server
     aliases: [bcast]
+   
+  superpick:
+    description: Toggle Superpick
+    aliases: [sp, spick]
 
 # Permissions:
   ctc.clear
@@ -211,5 +218,8 @@
     default: op
 
   decp.broadcast:
+    default: op
+  
+  dc.superpick.toggle:
     default: op
 
