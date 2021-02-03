@@ -94,3 +94,7 @@ RainMsg:  'Storm'
 #Time#
 Time_Day:  'Set Day Time!'
 Time_Night:  'Set Night Time'
+
+#Superpick
+EnableMessage:  '&5Superpick Enabled!'
+DisableMessage:  '&dSuperpick Disabled!'
