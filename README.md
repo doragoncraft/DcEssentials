@@ -34,7 +34,7 @@ Key < > Needed [ ] optinal
   
   speed - set fly and walk speed **Flying /speed <1/2/3/4/5/6/7/8/9> Walking /speed 1/2/3/4/5/6/7/8>
   
-  time - change time off day **/time <day/night/noon/sunrise/sunset/midnight>**
+  time - change time off day **/day/night**
   
   Weather - change the weather **/sun /rain
   
