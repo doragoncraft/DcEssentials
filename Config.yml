@@ -9,7 +9,12 @@ fadein: 30
 stay: 100
 fadeout: 100
 
-#Clear chat config
+######## Vanish ######
+action-bar-message: "Vanished"
+#vanish message settings are in the lang.yml file
+
+
+##########Clear chat config
 Prefix: '&6[&1D&fC&6]&c'
 CMessage: '&r'
 Message: '&7has cleaned the chat!'
@@ -70,13 +75,13 @@ MOTD:
     - "&cServer is whitelisted...\n&aCome back later!"
     - "&cWe are doing stuff...\n&aSorry! Come back later!"
   enabled: true
-#Spawn settings
+##########Spawn settings
 Spawn:
   world: world
   x: 0.00000000
   y: 70.0
   z: 0.00000000
-#Discord Section
+#################Discord Section
 Discord:
   Enabled: true
   Message:
@@ -88,7 +93,7 @@ Discord:
     maintitle: "&dDiscord"
     subtitle: "&bhttps://discord.gg/VMx9JmY"
 
-#Website Section
+################Website Section
 Website:
   Enabled: true
   Message:
@@ -100,7 +105,7 @@ Website:
     maintitle: "&fWebsite"
     subtitle: "&bhttp://doragoncraftnetwork.com/"
 
-#vote section
+###########vote section
 Vote:
   Enabled: true
   Message:
@@ -112,7 +117,7 @@ Vote:
     maintitle: "&fVote"
     subtitle: "&bhttp://doragoncraftnetwork.com/vote"
 
-#Store Section
+############Store Section
 Store:
   Enabled: true
   Message:
@@ -124,7 +129,7 @@ Store:
     maintitle: "&cStore"
     subtitle: "&bhttp://store.doragoncraftnetwork.com/"
 
-#YouTube Section
+############YouTube Section
 Youtube:
   Enabled: true
   Message:
@@ -136,7 +141,7 @@ Youtube:
     maintitle: "&fYou&4Tube"
     subtitle: "&bhttps://www.youtube.com/c/doragoncraft"
 
-#Links Section
+############Links Section
 Links:
   Enabled: true
   Message:
@@ -148,7 +153,7 @@ Links:
     maintitle: "&cExtra Links"
     subtitle: "&bTitle2 "
 
-#Twitch Section
+#############Twitch Section
 Twitch:
   Enabled: true
   Message:
