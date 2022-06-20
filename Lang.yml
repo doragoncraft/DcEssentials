@@ -1,8 +1,16 @@
 #LANGUAGE File
 ##### PlaceHolders  ######
-
 # [%player%] - Player name
 # [%TARGET%] - Target player name
+#Supports color codes###
+# &0-9 &a-f
+# Obfuscated &k
+# Bold &l
+# Strikethrough &m
+# Underline	&n
+# Italic &o
+# Reset the default color &r
+
 NO_PERM: '&4You don''t have permission to do that!'
 Console: '&cYou cannot use this command from the console!'
 Wrong_Args: '&4You are missing Args! please try again!'
@@ -10,10 +18,16 @@ Config_Reloaded: 'Config &aSuccessfully reloaded.'
 Block_Cmd_Message: '&cYou can not use that command!'
 Unkown_Command: '&cUnkown Command'
 IncorrectUsage: 'Incorrect Usage'
-AntiOP: 'This command can only be used by the console.
-          For security reasons'
+AntiOP: 'This command can only be used by the console. For security reasons'
+incorrectformat: 'Incorrect format! Please use'
 Admin: 'Please ask one of the admins to enable this option!'
-Broadcast: '"&2[&6Broadcaste&2] '
+Broadcast: '&2[&6Broadcast&2] '
+reload: '&cConfigs Reloaded'
+playernf: 'is not online or doesn''t exist!'
+
+#####GODMODE#####
+godenabled: '&6Godmode &2Enabled '
+goddisabled: '&6Godmode &cDisabled '
 
 #HOMES
 Solid_Block: 'You must be on the a solid Block!'
@@ -52,18 +66,23 @@ repaireditemhand: 'Successfully repaired item in hand'
 repairallitems: 'Successfully repaired all repairable item'
 
 #Vanish#
-Vanished:  'You are now Vanished.'
-Un_Vanished:  '&9You are no longer Vanished.'
+vanishmessage: 'You are now invisible!'
+vanishdisabled: 'You are now visible to other players on the server'
 
 #Fly#
-Fly_Enabled: 'Flying Enabled.'
-Fly_Disabled:  'Flying Disabled.'
+Fly_Enabled: '&aEnabled fly mode.'
+Fly_Disabled: '&cDisabled fly mode.'
+Flyother_Enabled: '&afly mode Enabled.'
+Flyother_Disabled: '&cfly mode Disabled.'
 
-#Speed#
-Not_Enough_Arguments: 'Error. Use /speed <0-9> if flying. If walking use /speed <0-8>.'
-Changed_Speed_Level: 'Set your Speed Level to [SPEED]&9.'
-Too_High_Fly_Speed_Level: 'Fly speed &cError. Use 0-9!'
-Too_High_Walk_Speed_Level:  'Walk speed &cError. Use 0-8!'
+#flyspeed
+flyspeedset: 'Flyspeed set to '
+flyspeederror: 'Fly speed can''t be less than -10 or more than 10'
+speednumbererror: 'Only number values are allowed here'
+#walkspeed
+walkspeedset: 'Walkspeed set to '
+walkspeederror: 'Walk speed can''t be less than -10 or more than 10'
+
 
 #Gamemode#
 Too_High_Number:  '&cError. Use /gm <0-3> [Player].'
