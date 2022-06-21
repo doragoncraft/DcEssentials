@@ -1,0 +1,10 @@
+testtest:
+  world: world
+  x: -1891.2570207595709
+  y: 69.11700219495692
+  z: 383.49083969562554
+  yaw: -77.40010070800781
+  pitch: 34.65010070800781
+  Player:
+    ==: Player
+    name: DoragonCraft
