@@ -1,7 +1,6 @@
-
-Thank-you-message: true #This is the "Thank you for using DCEasyCmds Prem message" (Only server Opped players see this!)
-#Message for /info
-info-message: '&3Already <players> players have connected to the server, server has run for <time> and world has <size> so far.'
+#Now you can display titles to players!
+#Simply change the times that fit you.
+#Remebmer! - 20 tickes = 1 second. (The numbers are ticks).
 
 ###### Title Settings ######
 #This settings are for every title.
@@ -9,12 +8,7 @@ fadein: 30
 stay: 100
 fadeout: 100
 
-######## Vanish ######
-action-bar-message: "Vanished"
-#vanish message settings are in the lang.yml file
-
-
-##########Clear chat config
+#clear chat config
 Prefix: '&6[&1D&fC&6]&c'
 CMessage: '&r'
 Message: '&7has cleaned the chat!'
@@ -37,20 +31,45 @@ Lines: 150
   #/twitch - shows twitch link - no perm
   #/links - put extra links here - no perms
   #/setgui - gui setup menu - decp.gui
-  #/youtube - youtube link - no perm
+#/youtube - youtube link - no perm
+
 
 #Icons:
-#{icon1} - ❤
-#{icon2} - ♕
-#{icon3} - ヽ(•‿•)ノ
-#{icon4} - ＼(｀0´)／
-#{icon5} - ヽ(^o^)ノ
+#{icon1} - ���
+#{icon2} - ���
+#{icon3} - ���(���������)���
+#{icon4} - ���(���0��)���
+#{icon5} - ���(^o^)���
 #################
+Command Messages:
+  No Player: '&cYou are not a Player!'
+  No Permissions: '&4You don''t have the permissions to do this!'
+  Wrong Command: ' &4This Command does not exists!'
+  Config Reloaded: 'Config &aSuccessfully reloaded.'
+Thank-you-message: true #This is the "Thank you for using DCEasyCmds Prem message" (Only server Opped players see this!)
+Gamemode:
+  Too High Number: "&cInvalid gamemode."
+  Not Online: "&cThat player is not online."
+  Self:
+    Set To Survival: "&aYour gamemode has been set to Survival."
+    Set To Creative: "&aYour gamemode has been set to Creative."
+    Set To Adventure: "&aYour gamemode has been set to Adventure."
+    Set To Spectator: "&aYour gamemode has been set to Spectator."
+  Other:
+    Set To Survival: "&aYou set [TARGET]'s gamemode to Survival."
+    Set To Creative: "&aYou set [TARGET]'s gamemode to Creative."
+    Set To Adventure: "&aYou set [TARGET]'s gamemode to Adventure."
+    Set To Spectator: "&aYou set [TARGET]'s gamemode to Spectator."
 
-#Antiop this if enabled means you can only op players from the console
-AntiOP:
-  Enabled: true
-#this will block commands from being used
+  Usage: "&cUsage: /gamemode <mode> [player]"
+spawn:
+  world: world
+  x: 0.5
+  y: 64
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
 Command Block:
   Enabled: true
   Commands:
@@ -61,27 +80,8 @@ Command Block:
     - "/minecraft"
     - "/op"
   Message: "&cYou can not use that command!"
-#Motd
-MOTD:
-  MOTDS:
-    - '&1Doragon&bCraft &cUsing DECP'
-    - '&2Doragon&aCraft &dUsing DECP'
-    - '&5Doragon&dCraft &cUsing DECP'
-    - '&8Doragon&7Craft &aUsing DECP'
-    - '&4Doragon&cCraft &2Using DECP'
-    - '&1Doragon&fCraft &6Using DECP'
-    - '&6Doragon&eCraft &eUsing DECP'
-  WhiteListMOTD:
-    - "&cServer is whitelisted...\n&aCome back later!"
-    - "&cWe are doing stuff...\n&aSorry! Come back later!"
-  enabled: true
-##########Spawn settings
-Spawn:
-  world: world
-  x: 0.00000000
-  y: 70.0
-  z: 0.00000000
-#################Discord Section
+
+#Discord Section
 Discord:
   Enabled: true
   Message:
@@ -93,7 +93,7 @@ Discord:
     maintitle: "&dDiscord"
     subtitle: "&bhttps://discord.gg/VMx9JmY"
 
-################Website Section
+#Website Section
 Website:
   Enabled: true
   Message:
@@ -105,7 +105,7 @@ Website:
     maintitle: "&fWebsite"
     subtitle: "&bhttp://doragoncraftnetwork.com/"
 
-###########vote section
+#vote section
 Vote:
   Enabled: true
   Message:
@@ -117,7 +117,7 @@ Vote:
     maintitle: "&fVote"
     subtitle: "&bhttp://doragoncraftnetwork.com/vote"
 
-############Store Section
+#Store Section
 Store:
   Enabled: true
   Message:
@@ -129,7 +129,7 @@ Store:
     maintitle: "&cStore"
     subtitle: "&bhttp://store.doragoncraftnetwork.com/"
 
-############YouTube Section
+#YouTube Section
 Youtube:
   Enabled: true
   Message:
@@ -141,7 +141,7 @@ Youtube:
     maintitle: "&fYou&4Tube"
     subtitle: "&bhttps://www.youtube.com/c/doragoncraft"
 
-############Links Section
+#Links Section
 Links:
   Enabled: true
   Message:
@@ -153,7 +153,7 @@ Links:
     maintitle: "&cExtra Links"
     subtitle: "&bTitle2 "
 
-#############Twitch Section
+#Twitch Section
 Twitch:
   Enabled: true
   Message:
@@ -182,7 +182,7 @@ Messages:
     '1': '&6<======&b&l Messages &6======>'
     '2': '&4thank you for purchasing'
     '3': '&2DCEasyCmds Prem'
-    '4': '&cPlease rate &6⭐⭐⭐⭐⭐'
+    '4': '&cPlease rate &6���������������'
     '5': '&dmy other resources '
     '6': '&6https://www.spigotmc.org/resources/authors/doragoncraft.126499/'
     '7': '&eThank you much love'
