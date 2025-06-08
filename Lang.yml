@@ -1,8 +1,8 @@
-#LANGUAGE File
-##### PlaceHolders  ######
+# LANGUAGE File
+# #### PlaceHolders  ######
 # [%player%] - Player name
 # [%TARGET%] - Target player name
-#Supports color codes###
+# Supports color codes###
 # &0-9 &a-f
 # Obfuscated &k
 # Bold &l
@@ -11,109 +11,194 @@
 # Italic &o
 # Reset the default color &r
 
-NO_PERM: '&4You don''t have permission to do that!'
+NO_PERM: '&cYou don''t have permission to do that!'
 Console: '&cYou cannot use this command from the console!'
 Wrong_Args: '&4You are missing Args! please try again!'
-Config_Reloaded: 'Config &aSuccessfully reloaded.'
+Config_Reloaded: Config &aSuccessfully reloaded.
 Block_Cmd_Message: '&cYou can not use that command!'
 Unkown_Command: '&cUnkown Command'
-IncorrectUsage: 'Incorrect Usage'
-AntiOP: 'This command can only be used by the console. For security reasons'
-incorrectformat: 'Incorrect format! Please use'
-Admin: 'Please ask one of the admins to enable this option!'
+IncorrectUsage: Incorrect Usage
+AntiOP: This command can only be used by the console. For security reasons
+incorrectformat: Incorrect format! Please use
+Admin: Please ask one of the admins to enable this option!
 Broadcast: '&2[&6Broadcast&2] '
 reload: '&cConfigs Reloaded'
-playernf: 'is not online or doesn''t exist!'
+playernf: is not online or doesn't exist!
 
-#####GODMODE#####
+# ####GODMODE#####
 godenabled: '&6Godmode &2Enabled '
 goddisabled: '&6Godmode &cDisabled '
 
-#HOMES
-Solid_Block: 'You must be on the a solid Block!'
-No_Homes: 'You dont have any homes!'
-Home_Name:  'You must specify a home name!'
+# HOMES
+Solid_Block: You must be on the a solid Block!
+No_Homes: You dont have any homes!
+Home_Name: You must specify a home name!
 Home_Deleted: ' has been successfully deleted!'
-Unknown_Home: 'Unknown home name!'
-Too_many_homes: 'You have too many homes! Try deleting some of them.'
+Unknown_Home: Unknown home name!
+Too_many_homes: You have too many homes! Try deleting some of them.
 
-#SPAWN#
+# SPAWN#
 Spawn_Not_Set: '&cSpawn is not set! Please notify a Administrator to set the spawn!'
 set_spawn_msg: '&aSucessfully set spawn!'
-Spawn_Welcome_Msg:  '&aWelcome to the server''s spawn!'
+Spawn_Welcome_Msg: '&aWelcome to the server''s spawn!'
 
-#TPA#
-TPA_RequestReceived_1:  '&aTeleport request from &6/user/ &areceived.'
-TPA_RequestReceived_2:  '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/ &ato deny.'
-TPA_RequestReceived_3:  '&6/user/ &ahas requested you to teleport to them.'
-TPA_RequestReceived_4:  '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/ &ato deny.'
-TPA_TpaRequestAccepted:  ' &6/user/ &ahas been teleported to you!'
-TPA_RequestAccepted:  '&6/target/ &aaccepted the teleport!'
-TPA_RequestSent:  '&aTeleport request successfully sent to &6/target/'
-TPA_TphereRequestAccepted:  '&aYou have been teleported to &6/user/!'
-TPA_RequestDeniedTeleport:  '&6/target/ &7has denied the teleport '
-TPA_RequestDenied:  '&7You denied the teleport'
-TPA_NoRequestToDeny:  '&7No request to deny!'
-TPA_NoRequestToAccept:  '&7No request to accept!'
+# TPA#
+TPA_RequestReceived_1: '&aTeleport request from &6/user/ &areceived.'
+TPA_RequestReceived_2: '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/
+  &ato deny.'
+TPA_RequestReceived_3: '&6/user/ &ahas requested you to teleport to them.'
+TPA_RequestReceived_4: '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/
+  &ato deny.'
+TPA_TpaRequestAccepted: ' &6/user/ &ahas been teleported to you!'
+TPA_RequestAccepted: '&6/target/ &aaccepted the teleport!'
+TPA_RequestSent: '&aTeleport request successfully sent to &6/target/'
+TPA_TphereRequestAccepted: '&aYou have been teleported to &6/user/!'
+TPA_RequestDeniedTeleport: '&6/target/ &7has denied the teleport '
+TPA_RequestDenied: '&7You denied the teleport'
+TPA_NoRequestToDeny: '&7No request to deny!'
+TPA_NoRequestToAccept: '&7No request to accept!'
 TPA_PlayerInAnotherWorldError: '&7You can''t teleport to a player in another world!'
 TPA_NoPlayerSpecified: '&7Please specify a player!'
 TPA_PlayerDoesNotExistError: '&7That player doesn''t exist! or is Not online!'
-Existing_Tpa_Request:  'You have already requested a tpa from that player!'
-Existing_Tphere_Request:  'You have already requested a tphere from that player!'
+Existing_Tpa_Request: You have already requested a tpa from that player!
+Existing_Tphere_Request: You have already requested a tphere from that player!
 
-#Repair#
-repaireditemhand: 'Successfully repaired item in hand'
-repairallitems: 'Successfully repaired all repairable item'
+# Cmdspy
+CmdspyEnabled: '&dCommand spy Enabled!'
+CmdspyDisabled: '&dCommand spy Disabled!'
+# Repair#
+repaireditemhand: Successfully repaired item in hand
+repairallitems: Successfully repaired all repairable item
 
-#Vanish#
-vanishmessage: 'You are now invisible!'
-vanishdisabled: 'You are now visible to other players on the server'
+# Vanish#
+vanishmessage: You are now invisible!
+vanishdisabled: You are now visible to other players on the server
 
-#Fly#
+# Fly#
 Fly_Enabled: '&aEnabled fly mode.'
 Fly_Disabled: '&cDisabled fly mode.'
 Flyother_Enabled: '&afly mode Enabled.'
 Flyother_Disabled: '&cfly mode Disabled.'
 
-#flyspeed
+# flyspeed
 flyspeedset: 'Flyspeed set to '
-flyspeederror: 'Fly speed can''t be less than -10 or more than 10'
-speednumbererror: 'Only number values are allowed here'
-#walkspeed
+flyspeederror: Fly speed can't be less than -10 or more than 10
+speednumbererror: Only number values are allowed here
+# walkspeed
 walkspeedset: 'Walkspeed set to '
-walkspeederror: 'Walk speed can''t be less than -10 or more than 10'
+walkspeederror: Walk speed can't be less than -10 or more than 10
 
 
-#Gamemode#
-Too_High_Number:  '&cError. Use /gm <0-3> [Player].'
-Not_Online:  '&cError. This Player isn''t Online.'
-#SELF#
-Set_To_Creative:  'Your Gamemode has been set to &1Creative&9.'
-Set_To_Survival:  'Your Gamemode has been set to &1Survival&9.'
-Set_To_Adventure:  'Your Gamemode has been set to &1Adventure&9.'
-Set_To_Spectator:  'Your Gamemode has been set to &1Spectator&9.'
-#OTHER#
-Set_Other_Creative: 'You set &1[%TARGET%]''s &9Gamemode to &1Creative&9.'
-Set_Other_Survival:  'You set &1[%TARGET%]''s &9Gamemode to &1Survival&9.'
-Set_Other_Adventure:  'You set &1[%TARGET%]''s &9Gamemode to &1Adventure&9.'
-Set_Other_Spectator:  'You set &1[%TARGET%]''s &9Gamemode to &1Spectator&9.'
+# Gamemode#
+Too_High_Number: '&cError. Use /gm <0-3> [Player].'
+Not_Online: '&cError. This Player isn''t Online.'
+# SELF#
+Set_To_Creative: Your Gamemode has been set to &1Creative&9.
+Set_To_Survival: Your Gamemode has been set to &1Survival&9.
+Set_To_Adventure: Your Gamemode has been set to &1Adventure&9.
+Set_To_Spectator: Your Gamemode has been set to &1Spectator&9.
+# OTHER#
+Set_Other_Creative: You set &1[%TARGET%]'s &9Gamemode to &1Creative&9.
+Set_Other_Survival: You set &1[%TARGET%]'s &9Gamemode to &1Survival&9.
+Set_Other_Adventure: You set &1[%TARGET%]'s &9Gamemode to &1Adventure&9.
+Set_Other_Spectator: You set &1[%TARGET%]'s &9Gamemode to &1Spectator&9.
 
-#HEALTH#
-FeedMsg:  'you have been fed'
-FeedMsgOther:  'You have been fed by'
-FeedOtherSender: 'you have fed'
-HealMsg:  'you have been healed'
-HealMsgOther:  'You have been healed by'
-HealOtherSender: 'You have healed'
+# HEALTH#
+FeedMsg: you have been fed
+FeedMsgOther: You have been fed by
+FeedOtherSender: you have fed
+HealMsg: you have been healed
+HealMsgOther: You have been healed by
+HealOtherSender: You have healed
 
-#Weather#
-SunMsg:  'sunny'
-RainMsg:  'Storm'
+# Weather#
+SunMsg: sunny
+RainMsg: Storm
 
-#Time#
-Time_Day:  'Set Day Time!'
-Time_Night:  'Set Night Time'
+# Time#
+Time_Day: Set Day Time!
+Time_Night: Set Night Time
 
-#Superpick
-EnableMessage:  '&5Superpick Enabled!'
-DisableMessage:  '&dSuperpick Disabled!'
+# Superpick
+EnableMessage: '&5Superpick Enabled!'
+DisableMessage: '&dSuperpick Disabled!'
+noperms: '&4You do not have permission to do that'
+console: '&cYou cannot use this command from the console!'
+wrong_args: '&4You are missing Args! please try again!'
+config_reloaded: Config &aSuccessfully reloaded.
+block_cmd_message: '&cYou can not use that command!'
+unknown_command: '&cUnknown Command'
+incorrect_usage: Incorrect Usage
+anti_op: This command can only be used by the console. For security reasons
+incorrect_format: Incorrect format! Please use
+admin: Please ask one of the admins to enable this option!
+broadcast: '&2[&6Broadcast&2] '
+player_not_found: is not online or doesn't exist!
+CmdSpyEnabled: '&dCommandspy Enabled'
+CmdSpyDisabled: '&dCommandspy Disabled'
+god_enabled: '&6Godmode &2Enabled '
+god_disabled: '&6Godmode &cDisabled '
+solid_block: You must be on a solid block!
+no_homes: You don't have any homes!
+home_name: You must specify a home name!
+home_deleted: ' has been successfully deleted!'
+unknown_home: Unknown home name!
+too_many_homes: You have too many homes! Try deleting some of them.
+spawn_not_set: '&cSpawn is not set! Please notify an administrator to set the spawn!'
+spawn_welcome_msg: '&aWelcome to the server''s spawn!'
+tpa_request_received_1: '&aTeleport request from &6/user/ &areceived.'
+tpa_request_received_2: '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/
+  &ato deny.'
+tpa_request_received_3: '&6/user/ &ahas requested you to teleport to them.'
+tpa_request_received_4: '&aType &b&l/tpaccept /user/ &ato accept or &c&l/tpdeny /user/
+  &ato deny.'
+tpa_tpa_request_accepted: ' &6/user/ &ahas been teleported to you!'
+tpa_request_accepted: '&6/target/ &aaccepted the teleport!'
+tpa_request_sent: '&aTeleport request successfully sent to &6/target/'
+tpa_tphere_request_accepted: '&aYou have been teleported to &6/user/!'
+tpa_request_denied_teleport: '&6/target/ &7has denied the teleport '
+tpa_request_denied: '&7You denied the teleport'
+tpa_no_request_to_deny: '&7No request to deny!'
+tpa_no_request_to_accept: '&7No request to accept!'
+tpa_player_in_another_world_error: '&7You can''t teleport to a player in another world!'
+tpa_no_player_specified: '&7Please specify a player!'
+tpa_player_does_not_exist_error: '&7That player doesn''t exist or is not online!'
+existing_tpa_request: You have already requested a tpa from that player!
+existing_tphere_request: You have already requested a tphere from that player!
+TP_TOGGLE_ON: TP Toggled on
+TP_TOGGLE_OFF: TP Toggled off
+repaired_item_hand: Successfully repaired item in hand
+repair_all_items: Successfully repaired all repairable items
+vanish_message: You are now invisible!
+vanish_disabled: You are now visible to other players on the server
+fly_enabled: '&aEnabled fly mode.'
+fly_disabled: '&cDisabled fly mode.'
+fly_other_enabled: '&afly mode Enabled.'
+fly_other_disabled: '&cfly mode Disabled.'
+flyspeed_set: 'Flyspeed set to '
+flyspeed_error: Fly speed can't be less than -10 or more than 10
+speed_number_error: Only number values are allowed here
+walkspeed_set: 'Walkspeed set to '
+walkspeed_error: Walk speed can't be less than -10 or more than 10
+too_high_number: '&cError. Use /gm <0-3> [Player].'
+not_online: '&cError. This Player isn''t Online.'
+set_to_creative: Your Gamemode has been set to &1Creative&9.
+set_to_survival: Your Gamemode has been set to &1Survival&9.
+set_to_adventure: Your Gamemode has been set to &1Adventure&9.
+set_to_spectator: Your Gamemode has been set to &1Spectator&9.
+set_other_creative: You set &1[%TARGET%]'s &9Gamemode to &1Creative&9.
+set_other_survival: You set &1[%TARGET%]'s &9Gamemode to &1Survival&9.
+set_other_adventure: You set &1[%TARGET%]'s &9Gamemode to &1Adventure&9.
+set_other_spectator: You set &1[%TARGET%]'s &9Gamemode to &1Spectator&9.
+feed_msg: You have been fed
+feed_msg_other: You have been fed by
+feed_other_sender: You have fed
+heal_msg: You have been healed
+heal_msg_other: You have been healed by
+heal_other_sender: You have healed
+sun_msg: Sunny
+rain_msg: Storm
+time_day: Set Day Time!
+time_night: Set Night Time
+enable_message: '&5Superpick Enabled!'
+disable_message: '&dSuperpick Disabled!'
