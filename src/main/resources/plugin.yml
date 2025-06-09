@@ -1,0 +1,245 @@
+name: DCEssentials
+version: '${project.version}'
+main: me.doragoncraft.dcEssentials.Dcessentails
+api-version: '1.20'
+authors:
+  - doragoncraft
+website: www.doragoncraftnetwork.com
+softdepend:
+  - ProtocolLib
+
+commands:
+  message:
+    description: Sends a custom message.
+  discord:
+    description: Shows the Discord server invite.
+  website:
+    description: Shows the server website.
+  playerip:
+    description: Shows player IP and details.
+    permission: playerip.use
+    usage: /playerip <player>
+  ip:
+    description: Shows the server IP address.
+  vote:
+    description: Shows voting links.
+  store:
+    description: Shows the store address.
+  twitch:
+    description: Shows the Twitch channel link.
+  links:
+    description: Shows important server links.
+  decp:
+    description: Shows Decp plugin information.
+    permission: decp.gui
+  youtube:
+    description: Shows the YouTube channel link.
+    aliases: [yt]
+  setgui:
+    description: Setup the plugin GUI.
+    permission: decp.gui
+  ctc:
+    description: Clears the chat.
+    aliases: [clearchat, ctchat, clchat]
+    permission: ctc.clear
+    usage: /ctc [reload|lines|personal|help]
+  vanish:
+    description: Toggles player invisibility.
+    aliases: [v, uv, unvanish]
+    permission: decp.vanish
+  craft:
+    description: Opens a portable workbench.
+    aliases: [wb, workbench, craftbench]
+  trash:
+    description: Opens a trash inventory to discard items.
+    aliases: [dispose]
+  fly:
+    description: Toggles fly mode.
+  speed:
+    description: Set walk or fly speed for yourself or another player.
+    usage: /speed <walk|fly> <0-10> [player]
+    permission: decp.speed
+  gamemode:
+    description: Changes player gamemode.
+    aliases: [gm, gmode]
+  cmdspy:
+    description: Spy on player commands.
+    aliases: [cs, commandspy]
+  feed:
+    description: Fills your hunger bar.
+  heal:
+    description: Restores your health.
+  weather:
+    description: Change the world weather
+    usage: /weather <clear/sun/rain/storm/thunder>
+    permission: decp.weather
+  sun:
+    description: Set weather to clear
+    permission: decp.weather
+  rain:
+    description: Set weather to rain
+    permission: decp.weather
+  storm:
+    description: Set weather to rain
+    permission: decp.weather
+  thunder:
+    description: Set weather to thunderstorm
+    permission: decp.weather
+  time:
+    description: Set the world time.
+    usage: /time <day|night|noon|midnight|sunrise|sunset>
+  day:
+    description: Set time to day.
+  night:
+    description: Set time to night.
+  noon:
+    description: Set time to noon.
+  midnight:
+    description: Set time to midnight.
+  sunrise:
+    description: Set time to sunrise.
+  sunset:
+    description: Set time to sunset.
+  anvil:
+    description: Opens a portable anvil.
+  ban:
+    description: Permanently ban a player
+    usage: /ban <player> <reason>
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban <player> <time> <reason>
+  unban:
+    description: Unban a player
+    usage: /unban <player>
+  spawn:
+    description: Teleport to the server spawn.
+    usage: /spawn
+  setspawn:
+    description: Set the server spawn to your current location.
+    usage: /setspawn
+    permission: decp.setspawn
+  tpa:
+    description: Request to teleport to another player.
+    usage: /tpa <player>
+    permission: decp.tpa
+  tpaccept:
+    description: Accept a teleport request.
+    usage: /tpaccept
+  tpdeny:
+    description: Deny a teleport request.
+    usage: /tpdeny
+    permission: decp.tpaccept
+  tptoggle:
+    description: Toggle whether you accept teleport requests.
+    usage: /tptoggle
+    permission: decp.tptoggle
+  tp:
+    description: Teleport to a player, or teleport a player to another.
+    usage: /tp <player> [target]
+    permission: decp.tp
+  tpo:
+    description: Teleport to a player ignoring toggle restrictions.
+    usage: /tpo <player>
+    permission: decp.tpo
+  tphere:
+    description: Teleport a player to your location.
+    usage: /tphere <player>
+    permission: decp.tphere
+  tpahere:
+    description: Teleport request a player to your location.
+    usage: /tpahere <player>
+  tppos:
+    description: Teleport to coordinates
+    usage: /tppos <x> <y> <z> [world]
+    permission: decp.tppos
+  motdreload:
+    description: Reloads MOTDs from the config
+    usage: /motdreload
+    permission: dcprem.motdreload
+  home:
+    description: Teleport to a home
+  sethome:
+    description: Set a home
+  delhome:
+    description: Delete a home
+  setwarp:
+    description: Set a new warp
+    usage: /setwarp <name>
+  warp:
+    description: Teleport to a warp
+    usage: /warp <name>
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+  warps:
+    description: List warps you have permission to use
+    usage: /warps
+  god:
+    description: Toggle god mode
+    usage: /god [player]
+  enchanttable:
+    description: Opens a portable enchantment table
+    aliases: [ ec, etable ]
+    usage: /<command>
+  clear:
+    description: Clear your or another player's inventory
+    usage: /clear [player]
+    permission: decp.clear
+  kit:
+    description: Kit commands
+    usage: /kit <name>
+
+
+
+
+
+
+permissions:
+  decp.clear:
+    description: Allows clearing own inventory
+    default: op
+  decp.clear.other:
+    description: Allows clearing other players' inventories
+    default: op
+  dceasycmds.warp.set:
+    description: Allows setting warps
+    default: op
+  dceasycmds.warp.use:
+    description: (Not used, see per warp perms)
+    default: false
+  dceasycmds.warp.use.*:
+    description: Allows using all warps
+    default: op
+  dceasycmds.warp.delete:
+    description: Allows deleting warps
+    default: op
+  ctc.clear:
+    description: Allows clearing the chat for everyone.
+    default: op
+  ctc.reload:
+    description: Allows reloading the chat clear config.
+    default: op
+  ctc.lines:
+    description: Allows viewing number of lines for chat clear.
+    default: op
+  ctc.personal:
+    description: Allows clearing your own personal chat.
+    default: op
+  playerip.use:
+    description: Allows using the /playerip command.
+    default: op
+  decp.gui:
+    description: Allows access to Decp plugin GUI commands.
+    default: op
+  decp.vanish:
+    description: Allows toggling vanish.
+    default: op
+  decp.weather:
+    description: Allows changing the weather.
+    default: op
+  decp.speed:
+    description: Allows setting your own walk or fly speed
+    default: op
+  decp.speed.others:
+    description: Allows setting other players' walk or fly speed
+    default: op
