@@ -1,92 +1,167 @@
+# ⚙️ DcEssentials
 
-# DcEasyCmdsPrem
-![GitHub issues](https://img.shields.io/github/issues/doragoncraft/DcEasyCmdsPrem.svg?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/doragoncraft/DcEssentials.svg?style=for-the-badge)
 [![Discord](https://img.shields.io/discord/381442112400523264.svg?style=for-the-badge)](https://discordapp.com/invite/VMx9JmY)
- <p align="left">Join my discord
-  <a  href="https://discord.gg/VMx9JmY"><img src="https://discordapp.com/api/guilds/381442112400523264/widget.png?style=banner2" alt="Discord server"></a>
- My website
-  <a href="https://doragoncraftnetwork.com/"><img src="https://crafatar.com/avatars/d88dc2506f5d4bef8fdc08690d32f731?size=64&overlay" alt="Website"></a>
- View my other resources
-  <a href="[https://doragoncraftnetwork.com](https://www.spigotmc.org/resources/authors/doragoncraft.126499/)/"><img src="https://static.spigotmc.org/img/spigot.png" alt="Spigot"></a>
+
+A premium essential command plugin made for DoragonCraft servers, now available for others to use and enjoy.
+
+---
+
+## 📜 Description
+DcEssentials provides a set of essential and utility commands for your Minecraft server, along with player management tools, GUIs, and enhanced gameplay features. Highly configurable and easy to use, designed to enhance both player and admin experiences.
+
+---
+
+## 🌐 Connect With Me
+<p align="left">
+  Join my Discord:  
+  <a  href="https://discord.gg/VMx9JmY"><img src="https://discordapp.com/api/guilds/381442112400523264/widget.png?style=banner2" alt="Discord server"></a>  
+
+My Website:  
+<a href="https://doragoncraftnetwork.com/"><img src="https://crafatar.com/avatars/d88dc2506f5d4bef8fdc08690d32f731?size=64&overlay" alt="Website"></a>
+
+View my other resources:  
+<a href="https://www.spigotmc.org/resources/authors/doragoncraft.126499/"><img src="https://static.spigotmc.org/img/spigot.png" alt="Spigot"></a>
 </p>
 
-### For help and updates Please use discord Button above
-# update 1.3
-Added /flyspeed [#]
+---
 
-Added /walkspeed [#]
+## 📦 Features
+- Essential player commands (`/fly`, `/heal`, `/god`, `/home`, `/warp`, etc.)
+- Admin tools (`/vanish`, `/tpo`, `/tpahere`, `/speed`, etc.)
+- Interactive GUIs and inventory-based menus
+- Player teleport request system
+- Weather and time control commands
+- Command blocking and monitoring
+- Custom MOTD and Join messages
+- Warp and home management with config persistence
+- Tab completion for most commands
+- Metrics and plugin update notification
+- Fully configurable language and command permissions
 
-Fixed /fly command
+---
 
-Added portable enchant table /enchanttable aliases ec, etable
+## 🗺️ Plugin Map
 
-Recoded /gamemode now f3 f4 shortcut works
+<details>
+  <summary>📂 Click to expand full plugin structure map</summary>
 
-Recoded /vanish + added action bar
+### 📁 1️⃣ `src/main/java/me/doragoncraft/dcEssentials/`
+- `Dcessentails.java` (Main plugin class)
 
-Added godmode /godmode aliases /god
+### 📁 2️⃣ `commands/`
+- `Anvil`
+- `ClearCommand`
+- `CmdSpyCommand`
+- `CommandManager`
+- `Craft`
+- `Ctc`
+- `DelHomeCommand`
+- `DelWarpCommand`
+- `Discord`
+- `FlyCommand`
+- `GamemodeCommand`
+- `GodCommand`
+- `GuiOpen`
+- `Heal`
+- `HomeCommand`
+- `Links`
+- `LinkSP`
+- `PortableEnchant`
+- `ServerIP`
+- `SetHomeCommand`
+- `SetWarpCommand`
+- `SpawnCMD`
+- `SpeedCommand`
+- `StoreCmd`
+- `TimeCommand`
+- `TpAcceptCommand`
+- `TpaCommand`
+- `TpahereCommand`
+- `TpCommand`
+- `TpDenyCommand`
+- `TphereCommand`
+- `TpoCommand`
+- `TpposCommand`
+- `TpToggleCommand`
+- `Trash`
+- `Twitch`
+- `VanishCMD`
+- `Vote`
+- `WarpCommand`
+- `WarpsCommand`
+- `WeatherCommand`
+- `Website`
+- `Whois`
+- `YouTubeCmd`
 
-Updated lang.yml
+### 📁 3️⃣ `Listeners/`
+- `BlockCommands`
+- `ChatAsyncListener`
+- `CmdSpyListener`
+- `FlyListener`
+- `GamemodeChangeListener`
+- `GodModeListener`
+- `MotdListener`
+- `OnJoinListener`
+- `VanishListener`
+- `WrongCommand`
 
-Removed /speed now use /walkspeed and /flyspeed aliases /wspeed and /fspeed
+### 📁 4️⃣ `managers/`
+- `FlyManager`
+- `GamemodeManager`
+- `GodManager`
+- `HomeManager`
+- `TeleportRequestManager`
+- `SpeedManager`
+- `WarpsManager`
 
-####still looking into Maintenance mode
+### 📁 5️⃣ `uti/`
+- `ChatUti`
+- `GameModeHelper`
+- `Lang`
+- `Metrics`
+- `Dcessentails`
+- `GUIcmd`
+- `ListenerGUI`
 
-# Update 1.2
+### 📁 6️⃣ `resources/`
+- `config.yml`
+- `lang.yml`
+- `plugin.yml`
+- `warps.yml`
 
-Key < > Needed [ ] optinal
-Loads off stuff!
+</details>
 
-Custom MOTD - set a custom MOTD and cusom whitelist motd *this may change with next update as looking into Maintenance mode
+---
 
-setspawn & spawn - set a spawn point and abitly to tp to it **/setspawn /spawn**
+## 📝 Updates & Changelog
 
-Gamemode /gm <0/1/2/3>
+- ✅ Added `/weather <clear/sun/storm/thunder>` and aliases `/sun`, `/rain`, `/storm`, `/thunder`
+- ✅ Added `/time <day/night/noon/sunrise/sunset/midnight>` and aliases `/day`, `/night`, etc
+- ✅ Improved fly handling on login in creative & spectator
+- ✅ Added `/clear` command to wipe player inventory
+- ✅ Gamemode commands with tab completion and permission checks
+- ✅ Added FlyManager with persistence
+- ✅ Enhanced OnJoinListener for OP join messages and thank-you notes
+- ✅ Reorganized command map and managers for clarity
+- ✅ Fully documented plugin map inside README.md spoiler
 
-fly - abitly to fly **/fly [Playername]
+---
 
-vanish - abilty to vanish spy on players or troll them **/vanish /unvanish** aliases /v, /uv
+## 📥 Installation
 
-/tpa - Teleport to another player **/tpa <Player name> /tpaccept <Playername> /tpdeny <Playername>
+1. Download the latest release JAR
+2. Drop it into your server’s `/plugins/` folder
+3. Restart your server do not reload
+4. Configure `config.yml`, `lang.yml` and `warps.yml` as needed
+5. Done!
 
-/tp - Overide tpa directly teleport to a player without them having to accept it **/tp <Playername>
+---
 
-/Dispose - opens a chest gui to dispose of unwanted items
+## 📋 License
+MIT License © 2025 DoragonCraft
 
-/craft portable workbench **/craft** alisases wb, workbench, craftbench
+---
 
-/feed - feed your hunger **/feed [Playername]
-
-/heal - heal your hearts and  hunger **/heal [Playername]
-
-speed - set fly and walk speed **Flying /speed <1/2/3/4/5/6/7/8/9> Walking /speed 1/2/3/4/5/6/7/8>
-
-time - change time off day **/day/night**
-
-Weather - change the weather **/sun /rain
-
-Homes - set your own homes **/sethome /delhome /home <home name> /listhome**
-
-ALL new lang file for these commands
-
-Default lang file and config for if you mess it up: https://github.com/doragoncraft/DcEasyCmdsPrem
-
-
-# Update 1.1
-
-Added player help menu /decp
-
-Added admin help menu /decp help
-
-Added Clickable commands into both help menu
-
-
-# Initial release 1.0
-View [wiki](https://github.com/doragoncraft/DcEasyCmdsPrem/wiki)
-
-- [x] upload to spigot
-- [x] Create github page and wiki
-- [ ] Get more ideas
-- [ ] Fix issues if any
-
-View my other resources [Here:](https://www.spigotmc.org/resources/authors/doragoncraft.126499/)
+## ❤️ Thank you for using DcEssentials!
