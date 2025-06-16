@@ -1,9 +1,12 @@
+# ========================
+#      DcEssentials Config
+# ========================
+
 #Now you can display titles to players!
 #Simply change the times that fit you.
-#Remebmer! - 20 tickes = 1 second. (The numbers are ticks).
-
+#Remebmer! - 20 ticks = 1 second. (The numbers are ticks).
 ###### Title Settings ######
-#This settings are for every title.
+#These settings are for every title.
 fadein: 30
 stay: 100
 fadeout: 100
@@ -14,53 +17,13 @@ CMessage: '&r'
 Message: '&7has cleaned the chat!'
 Lines: 150
 
-  ##### PlaceHolders && Permissions && Icons && Commands ######
-
-  #[%player%] - Player name
-  #/ctc - clears full server chat - decp.ctc.clear
-  #/ctc lines - shows how many lines of text it will clear - decp.ctc.lines
-  #/ctc personal - clears your own chat - decp.ctc.personal
-  #/decp reload - Reloads config - decp.reload
-  #/website - shows website - no perm
-  #/message - can show messages set in config - no perm
-  #/Discord - shows discord - no prem
-  #/ip shows server ip set in config - no perm
-  #/playerip <playername> - shows player ip gamemode health etc - playerip.use
-  #/vote - shows vote link - no perm
-  #/store shows your store link - no perm
-  #/twitch - shows twitch link - no perm
-  #/links - put extra links here - no perms
-  #/setgui - gui setup menu - decp.gui
-#/youtube - youtube link - no perm
-
-
 #Icons:
-#{icon1} - ���
-#{icon2} - ���
-#{icon3} - ���(���������)���
-#{icon4} - ���(���0��)���
-#{icon5} - ���(^o^)���
+#{icon1} - ✨
+#{icon2} - ★
+#{icon3} - ✯
+#{icon4} - ⚙️
+#{icon5} - (^o^)
 #################
-Command Messages:
-  No Player: '&cYou are not a Player!'
-  No Permissions: '&4You don''t have the permissions to do this!'
-  Wrong Command: ' &4This Command does not exists!'
-  Config Reloaded: 'Config &aSuccessfully reloaded.'
-Thank-you-message: true #This is the "Thank you for using DCEasyCmds Prem message" (Only server Opped players see this!)
-Gamemode:
-  Too High Number: "&cInvalid gamemode."
-  Not Online: "&cThat player is not online."
-  Self:
-    Set To Survival: "&aYour gamemode has been set to Survival."
-    Set To Creative: "&aYour gamemode has been set to Creative."
-    Set To Adventure: "&aYour gamemode has been set to Adventure."
-    Set To Spectator: "&aYour gamemode has been set to Spectator."
-  Other:
-    Set To Survival: "&aYou set [TARGET]'s gamemode to Survival."
-    Set To Creative: "&aYou set [TARGET]'s gamemode to Creative."
-    Set To Adventure: "&aYou set [TARGET]'s gamemode to Adventure."
-    Set To Spectator: "&aYou set [TARGET]'s gamemode to Spectator."
-    Usage: "&cUsage: /gamemode <mode> [player]"
 
 motds:
   - "%motd_color%Welcome! &7Online: %online%/%max%"
@@ -195,7 +158,7 @@ Messages:
 
 #Feel free to edit the gui.
 gui:
-  title: "&1D&fE&cC&dP &cControl GUI" #GUI title
+  title: "&aDCEssentials &cControl GUI" #GUI title
   size: 18 #Max size is 27!
   inventory:
     item1: #Do not touch
