@@ -9,16 +9,35 @@ softdepend:
   - ProtocolLib
 
 commands:
+  dcess:
+    description: Essentials commands
+    aliases: [ ess, essentials, dcessentials ]
+  mail:
+    description: Manage your mail messages.
+    usage: /mail send|read|clear
   message:
-    description: Sends a custom message.
+    description: Send a private message to another player.
+    usage: /message <player> <message>
+  msg:
+    description: Alias for /message
+    usage: /msg <player> <message>
+  reply:
+    description: Reply to the last player who messaged you.
+    usage: /reply <message>
+  msgtoggle:
+    description: Toggle receiving private messages.
+    usage: /msgtoggle
+  socialspy:
+     description: Toggle social spy to see private messages between other players.
+     usage: /socialspy on|off
   discord:
     description: Shows the Discord server invite.
   website:
     description: Shows the server website.
-  playerip:
-    description: Shows player IP and details.
-    permission: playerip.use
-    usage: /playerip <player>
+  whois:
+    description: Shows info about player.
+    permission: whois.use
+    usage: /whois <player>
   ip:
     description: Shows the server IP address.
   vote:
@@ -29,15 +48,13 @@ commands:
     description: Shows the Twitch channel link.
   links:
     description: Shows important server links.
-  decp:
-    description: Shows Decp plugin information.
-    permission: decp.gui
+  dcessentials:
+    description: Shows Dcessentials plugin information.
   youtube:
     description: Shows the YouTube channel link.
     aliases: [yt]
   setgui:
     description: Setup the plugin GUI.
-    permission: decp.gui
   ctc:
     description: Clears the chat.
     aliases: [clearchat, ctchat, clchat]
@@ -46,7 +63,6 @@ commands:
   vanish:
     description: Toggles player invisibility.
     aliases: [v, uv, unvanish]
-    permission: decp.vanish
   craft:
     description: Opens a portable workbench.
     aliases: [wb, workbench, craftbench]
@@ -58,7 +74,6 @@ commands:
   speed:
     description: Set walk or fly speed for yourself or another player.
     usage: /speed <walk|fly> <0-10> [player]
-    permission: decp.speed
   gamemode:
     description: Changes player gamemode.
     aliases: [gm, gmode]
@@ -72,19 +87,14 @@ commands:
   weather:
     description: Change the world weather
     usage: /weather <clear/sun/rain/storm/thunder>
-    permission: decp.weather
   sun:
     description: Set weather to clear
-    permission: decp.weather
   rain:
     description: Set weather to rain
-    permission: decp.weather
   storm:
     description: Set weather to rain
-    permission: decp.weather
   thunder:
     description: Set weather to thunderstorm
-    permission: decp.weather
   time:
     description: Set the world time.
     usage: /time <day|night|noon|midnight|sunrise|sunset>
@@ -105,6 +115,8 @@ commands:
   ban:
     description: Permanently ban a player
     usage: /ban <player> <reason>
+  banlist:
+    description: List all banned players
   tempban:
     description: Temporarily ban a player
     usage: /tempban <player> <time> <reason>
@@ -117,45 +129,36 @@ commands:
   setspawn:
     description: Set the server spawn to your current location.
     usage: /setspawn
-    permission: decp.setspawn
   tpa:
     description: Request to teleport to another player.
     usage: /tpa <player>
-    permission: decp.tpa
   tpaccept:
     description: Accept a teleport request.
     usage: /tpaccept
   tpdeny:
     description: Deny a teleport request.
     usage: /tpdeny
-    permission: decp.tpaccept
   tptoggle:
     description: Toggle whether you accept teleport requests.
     usage: /tptoggle
-    permission: decp.tptoggle
   tp:
     description: Teleport to a player, or teleport a player to another.
     usage: /tp <player> [target]
-    permission: decp.tp
   tpo:
     description: Teleport to a player ignoring toggle restrictions.
     usage: /tpo <player>
-    permission: decp.tpo
   tphere:
     description: Teleport a player to your location.
     usage: /tphere <player>
-    permission: decp.tphere
   tpahere:
     description: Teleport request a player to your location.
     usage: /tpahere <player>
   tppos:
     description: Teleport to coordinates
     usage: /tppos <x> <y> <z> [world]
-    permission: decp.tppos
   motdreload:
     description: Reloads MOTDs from the config
     usage: /motdreload
-    permission: dcprem.motdreload
   home:
     description: Teleport to a home
   sethome:
@@ -184,62 +187,308 @@ commands:
   clear:
     description: Clear your or another player's inventory
     usage: /clear [player]
-    permission: decp.clear
   kit:
-    description: Kit commands
-    usage: /kit <name>
-
-
-
-
-
+    description: Kit management and usage
+    usage: /<command> [kitname|create|delete|preview|list]
+  kitreload:
+    description: Reload kits from the kits.yml file
+  kick:
+    description: Kick a player from the server.
+    usage: /kick <player> [reason]
+  kickall:
+    description: Kick all players from the server.
+    usage: /kickall [reason]
+  mute:
+    description: Mute a player.
+    usage: /mute <player>
+  tempmute:
+    description: Temporarily mute a player.
+    usage: /tempmute <player> <seconds>
+  unmute:
+    description: Unmute a player.
+    usage: /unmute <player>
+  muteall:
+    description: Toggle chat mute for all players.
+    usage: /muteall
+  mutelist:
+    description: List all muted players
+    usage: /mutelist
+  sudo:
+    description: Force a player to run a command or send a message.
+    usage: /sudo <msg|command> <player> <text>
+  spawner:
+    description: Change the mob type of the spawner you are looking at
+    usage: /spawner <mob|list>
+  spawnmob:
+    description: Spawns a mob at your target location
+    usage: /spawnmob <mob>
+  hat:
+    description: Put the item in your hand on your head
+    usage: /hat
+  rules:
+    description: View the server rules
+    usage: /rules
 
 permissions:
-  decp.clear:
-    description: Allows clearing own inventory
+  dcessentials.*:
+    description: Gives access to all DcEssentials commands and features.
+    children:
+      dcessentials.ctc: true
+      dcessentials.whois: true
+      dcessentials.vanish: true
+      dcessentials.cmdspy: true
+      dcessentials.fly: true
+      dcessentials.speed: true
+      dcessentials.gamemode: true
+      dcessentials.feed: true
+      dcessentials.heal: true
+      dcessentials.weather: true
+      dcessentials.time: true
+      dcessentials.ban: true
+      dcessentials.tempban: true
+      dcessentials.unban: true
+      dcessentials.kick: true
+      dcessentials.kickall: true
+      dcessentials.mute: true
+      dcessentials.tempmute: true
+      dcessentials.unmute: true
+      dcessentials.muteall: true
+      dcessentials.mutelist: true
+      dcessentials.tp: true
+      dcessentials.tpo: true
+      dcessentials.tphere: true
+      dcessentials.tpa: true
+      dcessentials.tpahere: true
+      dcessentials.tpaccept: true
+      dcessentials.tpdeny: true
+      dcessentials.tptoggle: true
+      dcessentials.tppos: true
+      dcessentials.home: true
+      dcessentials.sethome: true
+      dcessentials.delhome: true
+      dcessentials.setwarp: true
+      dcessentials.warp: true
+      dcessentials.delwarp: true
+      dcessentials.warps: true
+      dcessentials.god: true
+      dcessentials.kit: true
+      dcessentials.kitreload: true
+      dcessentials.clear: true
+      dcessentials.sudo: true
+      dcessentials.spawner: true
+      dcessentials.spawnmob: true
+      dcessentials.hat: true
+      dcessentials.rules: true
+      dcessentials.message: true
+      dcessentials.reply: true
+      dcessentials.msgtoggle: true
+      dcessentials.mail: true
+      dcessentials.socialspy: true
+  
+  dcessentials.sudo:
+    description: Force a player to run a command or send a message.
     default: op
-  decp.clear.other:
-    description: Allows clearing other players' inventories
+
+  dcessentials.ctc:
+    description: Allows use of /ctc to clear chat.
     default: op
-  dceasycmds.warp.set:
-    description: Allows setting warps
+
+  dcessentials.whois:
+    description: Allows use of /whois to view player info.
     default: op
-  dceasycmds.warp.use:
-    description: (Not used, see per warp perms)
-    default: false
-  dceasycmds.warp.use.*:
-    description: Allows using all warps
+
+  dcessentials.vanish:
+    description: Allows use of /vanish.
     default: op
-  dceasycmds.warp.delete:
-    description: Allows deleting warps
+
+  dcessentials.cmdspy:
+    description: Allows use of /cmdspy.
     default: op
-  ctc.clear:
-    description: Allows clearing the chat for everyone.
+
+  dcessentials.fly:
+    description: Allows toggling fly mode.
     default: op
-  ctc.reload:
-    description: Allows reloading the chat clear config.
+
+  dcessentials.speed:
+    description: Allows changing speed.
     default: op
-  ctc.lines:
-    description: Allows viewing number of lines for chat clear.
+
+  dcessentials.gamemode:
+    description: Allows changing gamemode.
     default: op
-  ctc.personal:
-    description: Allows clearing your own personal chat.
+
+  dcessentials.feed:
+    description: Allows feeding self or others.
     default: op
-  playerip.use:
-    description: Allows using the /playerip command.
+
+  dcessentials.heal:
+    description: Allows healing self or others.
     default: op
-  decp.gui:
-    description: Allows access to Decp plugin GUI commands.
+
+  dcessentials.weather:
+    description: Allows changing weather.
     default: op
-  decp.vanish:
-    description: Allows toggling vanish.
+
+  dcessentials.time:
+    description: Allows changing time.
     default: op
-  decp.weather:
-    description: Allows changing the weather.
+
+  dcessentials.ban:
+    description: Allows banning players.
     default: op
-  decp.speed:
-    description: Allows setting your own walk or fly speed
+
+  dcessentials.tempban:
+    description: Allows temporarily banning players.
     default: op
-  decp.speed.others:
-    description: Allows setting other players' walk or fly speed
+
+  dcessentials.unban:
+    description: Allows unbanning players.
     default: op
+
+  dcessentials.kick:
+    description: Allows kicking players.
+    default: op
+
+  dcessentials.kickall:
+    description: Allows kicking all players.
+    default: op
+
+  dcessentials.mute:
+    description: Allows muting players.
+    default: op
+
+  dcessentials.tempmute:
+    description: Allows temporarily muting players.
+    default: op
+
+  dcessentials.unmute:
+    description: Allows unmuting players.
+    default: op
+
+  dcessentials.muteall:
+    description: Allows muting chat globally.
+    default: op
+
+  dcessentials.mutelist:
+    description: Allows viewing the mute list GUI.
+    default: op
+
+  dcessentials.tp:
+    description: Allows teleporting.
+    default: op
+
+  dcessentials.tpo:
+    description: Allows overriding teleport restrictions.
+    default: op
+
+  dcessentials.tphere:
+    description: Allows teleporting players to you.
+    default: op
+
+  dcessentials.tpa:
+    description: Allows requesting teleports.
+    default: true
+
+  dcessentials.tpahere:
+    description: Allows requesting teleport to your location.
+    default: true
+
+  dcessentials.tpaccept:
+    description: Allows accepting teleport requests.
+    default: true
+
+  dcessentials.tpdeny:
+    description: Allows denying teleport requests.
+    default: true
+
+  dcessentials.tptoggle:
+    description: Allows toggling teleport requests.
+    default: true
+
+  dcessentials.tppos:
+    description: Allows teleporting to specific coordinates.
+    default: op
+
+  dcessentials.home:
+    description: Allows teleporting to a home.
+    default: true
+
+  dcessentials.sethome:
+    description: Allows setting a home.
+    default: true
+
+  dcessentials.delhome:
+    description: Allows deleting a home.
+    default: true
+
+  dcessentials.setwarp:
+    description: Allows setting warps.
+    default: op
+
+  dcessentials.warp:
+    description: Allows using warps.
+    default: true
+
+  dcessentials.delwarp:
+    description: Allows deleting warps.
+    default: op
+
+  dcessentials.warps:
+    description: Allows viewing warps list.
+    default: true
+
+  dcessentials.god:
+    description: Allows toggling god mode.
+    default: op
+
+  dcessentials.kit:
+    description: Allows using kits.
+    default: true
+
+  dcessentials.kitreload:
+    description: Allows reloading kits config.
+    default: op
+
+  dcessentials.clear:
+    description: Allows clearing inventories.
+    default: op
+
+  dcessentials.mute.exempt:
+    description: Prevents player from being muted, tempmuted, or affected by muteall.
+    default: op
+
+  dcessentials.spawner:
+    description: Change the mob type of the spawner you are looking at
+    default: op
+
+  dcessentials.spawnmob:
+    description: Allows the player to use /spawnmob
+    default: op
+
+  dcessentials.hat:
+    description: Put the item in your hand on your head
+    default: op
+
+  dcessentials.rules:
+    description: View the server rules
+    default: true
+
+  dcessentials.message:
+    description: Allows sending private messages with /message and /msg.
+    default: true
+
+    dcessentials.reply:
+      description: Allows replying to private messages with /reply.
+      default: true
+
+    dcessentials.msgtoggle:
+      description: Allows toggling receiving private messages with /msgtoggle.
+      default: true
+
+    dcessentials.mail:
+      description: Allows using the mail system commands.
+      default: true
+
+    dcessentials.socialspy:
+      description: Allows toggling social spy with /socialspy.
+      default: op
