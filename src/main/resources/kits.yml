@@ -1,0 +1,10 @@
+Starter:
+  delay: 0
+  items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: STONE_SWORD
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_HELMET
+    - ==: org.bukkit.inventory.ItemStack
+      type: BREAD
+      amount: 16
