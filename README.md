@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/doragoncraft/DcEssentials.svg?style=for-the-badge)
 [![Discord](https://img.shields.io/discord/381442112400523264.svg?style=for-the-badge)](https://discord.gg/VMx9JmY)
 
-A premium essential command plugin made for DoragonCraft servers, now available for others to use and enjoy.
+A premium essential command plugin made for DoragonCraft servers, now available for others to use and enjoy. 
 
 ---
 
