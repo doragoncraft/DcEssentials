@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/doragoncraft/DcEssentials.svg?style=for-the-badge)
 [![Discord](https://img.shields.io/discord/381442112400523264.svg?style=for-the-badge)](https://discord.gg/VMx9JmY)
 
-A premium essential command plugin made for DoragonCraft servers, now available for others to use and enjoy. 
+A premium essential command plugin made for DoragonCraft servers, now available for others to use and enjoy.
 
 ---
 
@@ -53,7 +53,10 @@ View my other resources:
 - `DcEssentials.java` (Main plugin class)
 
 ### 📁 2️⃣ `commands/`
+- `AboutCommand`
 - `Anvil`
+- `BanCommands`
+- `BanListCommands`
 - `ClearCommand`
 - `CmdSpyCommand`
 - `CommandManager`
@@ -66,17 +69,32 @@ View my other resources:
 - `GamemodeCommand`
 - `GodCommand`
 - `GuiOpen`
+- `HatCommand`
 - `Heal`
+- `HelpCommand`
 - `HomeCommand`
+- `KickAllCommand`
+- `KickCommand`
+- `KitCommand`
+- `KitReloadCommand`
 - `Links`
 - `LinkSP`
+- `MuteAllCommand`
+- `MuteCommand`
+- `MuteListCommand`
 - `PortableEnchant`
+- `ReloadCommand`
+- `RulesCommand`
 - `ServerIP`
 - `SetHomeCommand`
 - `SetWarpCommand`
 - `SpawnCMD`
+- `SpawnerCommand`
+- `SpawnMobCommand`
 - `SpeedCommand`
 - `StoreCmd`
+- `SudoCommand`
+- `TempMuteCommand`
 - `TimeCommand`
 - `TpAcceptCommand`
 - `TpaCommand`
@@ -89,7 +107,9 @@ View my other resources:
 - `TpToggleCommand`
 - `Trash`
 - `Twitch`
+- `UnmuteCommand`
 - `VanishCMD`
+- `VersionCommand`
 - `Vote`
 - `WarpCommand`
 - `WarpsCommand`
@@ -98,7 +118,19 @@ View my other resources:
 - `Whois`
 - `YouTubeCmd`
 
-### 📁 3️⃣ `listeners/`
+### 📁 3️⃣ `Dateabase/`
+- `DatabaseHandler`
+- `SQLiteDatabaseHandler`
+
+### 📁 4️⃣ `GUI/`
+- `BanlistGUI`
+- `KitListGUI`
+- `KitPreviewGUI`
+- `MuteListGUI`
+- `SetupGUI`
+- `SpawnerGUI`
+
+### 📁 5️⃣ `listeners/`
 - `BlockCommands`
 - `ChatAsyncListener`
 - `CmdSpyListener`
@@ -110,7 +142,7 @@ View my other resources:
 - `VanishListener`
 - `WrongCommand`
 
-### 📁 4️⃣ `managers/`
+### 📁 6️⃣ `managers/`
 - `FlyManager`
 - `GamemodeManager`
 - `GodManager`
@@ -119,7 +151,7 @@ View my other resources:
 - `SpeedManager`
 - `WarpsManager`
 
-### 📁 5️⃣ `util/`
+### 📁 7️⃣ `util/`
 - `ChatUtil`
 - `GameModeHelper`
 - `Lang`
@@ -128,10 +160,16 @@ View my other resources:
 - `GUIcmd`
 - `ListenerGUI`
 
-### 📁 6️⃣ `resources/`
+### 📁 8️⃣ `tabcompleters/`
+
+### 📁 9️⃣ `resources/`
+- `bans.yml`
 - `config.yml`
+- `kits.yml`
 - `lang.yml`
+- `mute.yml`
 - `plugin.yml`
+- `rules.yml`
 - `warps.yml`
 
 </details>
@@ -218,7 +256,43 @@ View my other resources:
 - ✅ Fixed minor bugs in message handling and command parsing.
 - ✅ Improved input validation and error handling.
 </details>
+ 
+<details>
+  <summary>📂 V1.3.1 </summary>
+✨ Additions:
+📬 /message, /reply, /msgtoggle, /socialspy
+Added a complete private messaging system:
+
+/message <player> <message> — Send private messages to other players.
+
+/reply <message> — Reply to the last player who messaged you.
+
+/msgtoggle — Enable/disable receiving private messages.
+
+/socialspy on|off — Allows staff to spy on private messages between players.
+
+📖 Command Aliases:
+
+/message aliases: msg, tell, whisper, w
+
+/reply alias: r
+
+🛠️ Fixes:
+✅ Resolved a YAML indentation issue in plugin.yml that prevented command registration on server start.
+
+✅ Fixed potential NPE when a player's last messaged UUID was null during /reply.
+
+✅ Cleaned up and standardized command usage messages and error handling.
+
+⚙️ Internal Improvements:
+📦 Refactored message handling through MessageManager for clean and centralized control.
+
+📚 Added social spy player tracking via UUID sets for efficient spying management.
+
+📑 Improved command feedback consistency and color formatting.
+
 </details>
+
 
 
 
